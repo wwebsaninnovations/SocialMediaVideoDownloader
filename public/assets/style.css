@@ -1,0 +1,236 @@
+*{
+    margin : 0;
+    padding : 0;
+    text-decoration : none;
+    font-family : 'Roboto'
+}
+.container{
+    max-width : 1840px;
+    padding : 0 40px 40px;
+    margin : 0 auto;
+}
+.header-container{
+    max-width: 1840px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+.header{
+    background: #000;
+    display: flex;
+    padding: 0px 40px;
+    gap : 40px;
+    align-items: center;
+}
+.header .logo{
+    width : 200px;
+}
+.header .logo img{
+    width : 100%;
+    height : 100%;
+    object-fit: contain;
+}
+.annoucment-panel{
+    display : flex;
+    justify-content: space-between;
+    width : 85%;
+}
+.text{
+    font-size: 36px;
+}
+.yt{
+    color : #ff0000
+}
+.fb{
+    color : #004aff
+}
+.insta{
+    color : #ff0078;
+}
+main{
+    background-color: #eceeed;
+}
+main .middle_content h2{
+    padding: 40px 30px;
+    font-size: 64px;
+    text-align: center;
+}
+.social-logos {
+    display: flex;
+    justify-content: space-between;
+    padding : 70px 0
+}
+.social-icons-text{
+    cursor: pointer;
+    width : 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.social-icons-text img{
+    width : 100%;
+    height: 150px;
+    object-fit: contain;
+}
+.social-icons-text h3{
+    text-align: center;
+    font-size: 40px;
+    padding-top : 20px;
+    color : #000;
+}
+
+.bottom_content{
+    background-color: #dbdbf6;
+    padding: 30px 50px;
+    max-width : 60%;
+    margin : 90px auto;
+}
+.bottom_content form .input_box{
+    display : flex;
+}
+.bottom_content form .input_box input{
+    width : 100%;
+    padding : 10px 5px;
+    border : 5px solid #fbe158;
+}
+.bottom_content form .input_box button{
+    width : 120px;
+    background-color: #fbe158;
+    border : none;
+    padding : 20px 0;
+    font-size : 24px;
+}
+.bottom_content form .input_box input::placeholder{
+    font-size : 24px;
+    color : #bababa
+}
+
+
+.video_uploader{
+    display : flex;
+    flex-direction: column;
+}
+.video_uploader input{
+    opacity: 0;
+    width : 0;
+}
+.video_uploader label{
+    font-size: 20px;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    width : 270px;
+    text-align: center;
+}
+
+
+
+
+@media(max-width : 1680px){
+    .text{
+        font-size : 30px;
+    }
+    main .middle_content h2{
+        font-size : 52px;
+    }
+}
+
+@media(max-width : 1440px){
+    .text{
+        font-size : 24px;
+    }
+    main .middle_content h2{
+        font-size : 40px;
+    }
+    .header .logo{
+        width : 170px;
+    }
+    .bottom_content{
+        max-width : 80%;
+    }
+    .social-icons-text h3 {
+        font-size: 36px;
+        padding-top: 15px;
+    }
+}
+@media(max-width : 1024px){
+    .header{
+        gap : 0px;
+    }
+    .header .logo{
+        width : 170px;
+    }
+    .annoucment-panel{
+        width : 70%;
+        margin : 0 auto;
+    }
+    .text{
+        text-align : center;
+    }
+    .social-icons-text h3{
+        font-size : 28px;
+    }
+}
+@media(max-width : 768px){
+    .header{
+        padding : 0 15px;
+    }
+    .social-logos{
+        flex-direction : column;
+        padding: 30px 0;
+    }
+    .social-icons-text{
+       width : 70%;
+       margin : 0 auto 40px;
+    }
+    main .middle_content h2{
+        font-size : 30px;
+    }
+    .bottom_content{
+        max-width : 100%;
+        padding : 20px;
+        margin : 30px 0;
+    }
+    .bottom_content form .input_box button{
+        padding : 7px 0;
+        width : 80px;
+    }
+    .bottom_content form .input_box button img{
+        width : 25px
+    }
+    .bottom_content form .input_box input::placeholder{
+        font-size : 18px;
+        color : #bababa
+    }
+    .bottom_content form .input_box input{
+        font-size : 18px;
+        border-width : 2px;
+    }
+    .container{
+        padding : 0 15px;
+    }
+}
+@media(max-width : 480px){
+    .social-icons-text{
+        width : 90%;
+    }
+    .header .logo {
+        width : 150px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    main .middle_content h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    
+}
